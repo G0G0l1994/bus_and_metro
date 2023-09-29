@@ -23,6 +23,7 @@ def bus_station ():
                 dict_streets_bus[name] += 1
             else:
                 dict_streets_bus[name] = 1
+    
     max_streets = max(dict_streets_bus.keys(), key = dict_streets_bus.get)
     return f"На улице {max_streets} больше всего автобусных остановок" 
 
