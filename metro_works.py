@@ -14,6 +14,7 @@ def bus_station ():
                 'PlaceDescription','Works','geodata_center','geoarea']
 
         reader = csv.DictReader(f,fields,delimiter=';')
+        
         for name in reader:
             name_streets.append(name['PlaceDescription'].split(', ')[0])
 
